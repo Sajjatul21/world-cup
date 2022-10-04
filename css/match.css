@@ -1,0 +1,23 @@
+.match-blog p {
+    font-size: 10px;
+
+}
+
+.match-flag {
+    display: flex;
+    justify-content: space-around;
+}
+
+.match-flag img {
+    width: 40%;
+}
+
+.match-flag p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.blog-style {
+    text-align: center;
+    padding: 50px 30px;
+}

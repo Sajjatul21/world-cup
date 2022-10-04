@@ -1,0 +1,381 @@
+/* font style  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* common style  */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.container-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*-----------------------------------------
+             Banner Section Start  
+-------------------------------------------*/
+.container {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 130px;
+    border-radius: 30px;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.header-text:hover {
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}
+
+.header-text {
+    margin-left: 90px;
+    padding: 20px;
+}
+
+.half-width h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.half-width p {
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.link-btn {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 25px;
+    color: #ffffff;
+    background-color: #DD0000;
+    border-radius: 5px;
+}
+
+.half-width img {
+    width: 100%;
+}
+
+.header-img {
+    padding-top: 33px;
+    padding-right: 79px;
+}
+
+/*---------------------------------------------
+            Banner Section End 
+ ---------------------------------------------*/
+/*-----------------------------------------
+             Live Section Start  
+-------------------------------------------*/
+.live-match-section {
+    display: flex;
+    margin-bottom: 50px;
+    ;
+}
+
+.match-button-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 512px;
+    height: 312px;
+    margin-right: 24px;
+    background-color: #161616;
+    border-radius: 10px;
+}
+
+.button {
+    margin: 20px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+}
+
+#blog-button {
+    background-color: #DD0000;
+}
+
+/* match blog  */
+
+
+.live-match-detail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.match-blog {
+
+    border: 1px solid #dfdcdc;
+    border-radius: 15px;
+}
+
+.match-blog img {
+    width: 100%;
+}
+
+.live-match {
+    padding: 20px;
+}
+
+.match-blog h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #161616;
+}
+
+.match-blog button {
+    color: #161616;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 4px 16px;
+}
+
+.match-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-regular {
+    padding-right: 5px;
+}
+
+.view-btn {
+    display: none;
+    text-align: center;
+    margin-bottom: 69px;
+
+}
+
+/*-----------------------------------------
+             Live Section End  
+-------------------------------------------*/
+/*-----------------------------------------
+             Footer Section End  
+-------------------------------------------*/
+footer {
+    background-color: #161616;
+}
+
+footer h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 80px;
+    padding-bottom: 40px;
+
+}
+
+footer hr {
+    border: 1px solid #B9B9B9;
+    width: 70%;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding: 20px;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #B9B9B9;
+    padding-right: 30px;
+}
+
+.icon {
+    text-align: center;
+    padding-bottom: 150px;
+}
+
+.icon a {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-brands {
+    margin-right: 10px;
+}
+
+/*======================================================================================
+                           Media Query Section  
+=======================================================================================*/
+/*---------------------------------------------
+            Mobile Device Start
+ ---------------------------------------------*/
+@media only screen and (max-Width:576px) {
+
+    /*---------------------- 
+    banner section start  
+    -----------------------*/
+    .container {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .half-width {
+        width: 80%;
+    }
+
+    .header-text {
+        margin-left: 0px;
+        padding: 0px;
+    }
+
+    .half-width img {
+        width: 80%;
+    }
+
+    .header-img {
+        padding-top: 33px;
+        padding-right: 0px;
+    }
+
+    /*---------------------------
+    banner section end  
+----------------------------*/
+    /*----------------------------
+    Live Match Section Start  
+-----------------------------*/
+    .match-button-section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    .button {
+        margin: 10px;
+        border: 1px solid #a8a0a0;
+    }
+
+    #blog-button {
+        padding: 14px 50px;
+    }
+
+    .live-match-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .live-match-detail {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*-------------------------- 
+    Live Match section end  
+    --------------------------*/
+
+    /*-------------------------- 
+        Footer section Start  
+    --------------------------*/
+
+    .footer-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-info a {
+        margin: 10px;
+    }
+
+}
+
+/*-------------------------- 
+    Footer section end  
+    --------------------------*/
+
+
+
+/*---------------------------------------------
+            Mobile Device End
+ ---------------------------------------------*/
+
+/*---------------------------------------------
+            Tablet Device Start
+ ---------------------------------------------*/
+@media only screen and (min-width:577px) and (max-width:992px) {
+    /* .container {
+        margin-bottom: 50px;
+    } */
+
+    .container {
+        margin: 50px 0px;
+        padding-bottom: 20px;
+    }
+
+    .half-width {
+        width: 50%;
+    }
+
+    .header-text {
+        margin-left: 40px;
+        padding: 10px;
+    }
+
+    .half-width img {
+        width: 100%;
+    }
+
+    .live-match-section {
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+
+    }
+
+    .match-button-section {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+        background-color: #ffffff;
+        /* border-radius: 10px; */
+    }
+
+    .button {
+        margin: 10px;
+        border: 1px solid #a8a0a0;
+    }
+
+    .live-match-detail {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .view-btn {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------
+            Tablet Device End
+ ---------------------------------------------*/
